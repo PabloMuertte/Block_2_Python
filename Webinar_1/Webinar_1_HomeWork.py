@@ -9,7 +9,7 @@ Task 1
 
 print('Please input your number of the day from 1 to 7 :')
 a = int(input())
-if a == (6 or 7):
+if a == 6 or a == 7:
     print('This is the weekend!')
 else:
     a == range(6)
@@ -20,7 +20,7 @@ else:
 Task 2
 Напишите программу для. проверки истинности утверждения 
 ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат.
-
+ 
 def logical_statement(x, y, z):
     print(f"¬({x} ⋁ {y} ⋁ {z}) = ¬{x} ⋀ ¬{y} ⋀ ¬{z} is {(not (x or y or z)) == (not x and not y and not z)}")
     return (not (x or y or z)) == (not x and not y and not z)
@@ -30,7 +30,7 @@ logical_statement(1, 1, 0) and logical_statement(1, 1, 1)):
     print("Истинно")
 else:
     print("Ложно")
-"""    
+""" 
     
 """
 Task 3 
@@ -85,15 +85,11 @@ elif (quater == 4):
 - A (3,6); B (2,1) -> 5,09
 - A (7,-5); B (1,-1) -> 7,21
 
-    Math.Sqrt((y_2-y_1)*(y_2-y_1)+(x_2-x_1)*(x_2-x_1));
-    Distance(x_1,x_2,y_1,y_2);
-
-
 import math
 
 
 def Distance(x_1,x_2,y_1,y_2):
-    distance = math.sqrt ((y_2-y_1)*(y_2-y_1)+(x_2-x_1)*(x_2-x_1))
+    distance = math.sqrt ((y_2-y_1)**2+(x_2-x_1)**2)
     return distance
 
 x_1 = int(input('X coordinate of point A : '))
