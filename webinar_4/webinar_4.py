@@ -34,8 +34,8 @@ print('Minimal digit is:',min(rand_list),'\nMaximal digit is:',max(rand_list))
 2. с помощью дополнительных библиотек Python (numpy.roots)
 """
 
-import numpy as np
+""" import numpy as np
 
 p= [1,5,6]
 roots = np.roots(p)
-print(roots)
+print(roots) """

@@ -72,7 +72,7 @@ for i in range(len(factor)):
 result.pop(-1)
 result.append('=0')
 
-record = open('data.txt', 'w')
+record = open('/home/pablo/Documents/Python GB/Block_2_Python/webinar_4/data.txt', 'w')
 record.write(''.join(result))
 record.close() 
 
