@@ -44,7 +44,7 @@ Task 4
 Пример:
 - k=2 => 2*x² + 4*x + 5 = 0 или x² + 5 = 0 или 10*x² = 0
 """
-# честно сам не решал нашел в интернете
+""" # честно сам не решал нашел в интернете
 from random import randint
 
 print('Чтобы сформировать многочлен степени k и записать в файл, введите степень k! ')
@@ -75,5 +75,27 @@ result.append('=0')
 record = open('/home/pablo/Documents/Python GB/Block_2_Python/webinar_4/data.txt', 'w')
 record.write(''.join(result))
 record.close() 
+ """
 
+""" 
+Даны два файла, в каждом из которых находится запись многочлена. 
+Задача - сформировать файл, содержащий сумму многочленов.
+ """
+
+ffile1 = open('/home/pablo/Documents/Python GB/Block_2_Python/webinar_4/data_1.txt', 'r')
+ffile2 = open('/home/pablo/Documents/Python GB/Block_2_Python/webinar_4/data_2.txt', 'r')
+ffile3 = open('/home/pablo/Documents/Python GB/Block_2_Python/webinar_4/data_3.txt', 'w')
+file1 = ffile1.readline()
+file2 = ffile2.readline()
+for i in range(len(file1)):
+    if file1[i-1] != '^':
+        if file1[i].isnumeric():
+            ffile3.write(str(int(file1[i])+int(file2[i])))
+        else:
+            ffile3.write(str(file1[i]))
+    else:
+        ffile3.write(str(file1[i]))
+ffile1.close
+ffile2.close
+ffile3.close
 
