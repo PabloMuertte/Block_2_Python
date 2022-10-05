@@ -46,10 +46,7 @@ def pair_sum_1 (list_1):
             s=[]
             for i in range(0,int(len(list_1)/2)):
                 n=len(list_1)-i
-                first = list_1[i]
-                last = list_1[n-1]
-                multiplied=first*last
-                s.append(multiplied)
+                s.append(list_1[i] * list_1[n-1])
             middle_digit = 2**int(((len(list_1)-1)/2)**2)
             s.append(middle_digit)
         return s
@@ -139,3 +136,18 @@ for e in range(1, userNumber + 1):
     list.insert(0, NegaFibonacci(e))
 print(list)
 """
+""" def fibonachi (n):
+    if n in [1,2]:
+        return 1
+    else:
+        return fibonachi (n-1) + fibonachi(n-2)
+
+def nega_fibonachi (n):
+    list_negafibonachi = [0]
+    for i in range (1,n + 1):
+        list_negafibonachi.append(fibonachi(i))
+        list_negafibonachi.insert(0, (fibonachi(i) * (-1)**(i+1)))
+    return list_negafibonachi
+
+n = int(input('Insert your number to get list negafibonachi: '))
+print(f"Your list of negafibonachi numbers for inserted number {n} is: {nega_fibonachi(n)}") """
