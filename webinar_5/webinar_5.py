@@ -241,14 +241,14 @@ def rle_decode(data):
 
 data = open('/home/pablo/Documents/Python GB/Block_2_Python/webinar_5/webinar_5_task_5.txt','r')
 txt_1=data.readline()
-
+print('Original text: ',txt_1)
 encoded_val = rle_encode(txt_1)
-print(encoded_val)
+print('Encoded text: ',encoded_val)
 with open('/home/pablo/Documents/Python GB/Block_2_Python/webinar_5/webinar_5_task_5_encoded_result.txt', 'w') as data1:
     data1.writelines(encoded_val)
 
 decoded_val = rle_decode(encoded_val)
-print(decoded_val)
+print('Decoded text: ',decoded_val)
 with open('/home/pablo/Documents/Python GB/Block_2_Python/webinar_5/webinar_5_task_5_decoded_result.txt', 'w') as data1:
     data1.writelines(decoded_val)
 
