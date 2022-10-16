@@ -74,11 +74,9 @@ def dig_after_point (list_1):
     return s
 
 def dif_min_max (list_2):
-    
     for i in range(0,len(list_2)):
         min_1 = list_2[1]
         max_1 = list_2[1]
-        #print(list_2[i])
         if list_2[i] > max_1:
             max_1 = list_2[i]
         elif list_2[i]< min_1:

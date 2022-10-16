@@ -35,6 +35,8 @@ r – открытие для чтения данных
 w – открытие для записи данных
 w+, r+
 
+with open ('/home/pablo/Documents/Python GB/Block_2_Python/Webinar_3/file1.txt','r', encoding='utf-8')
+
 with open('file.txt', 'w') as data:
     data.write('line 1\n')
     data.write('line 2\n')
