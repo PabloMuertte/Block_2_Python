@@ -9,7 +9,7 @@ def main_menu ():
         print("Hello, you launched Telephone book programm")
         while True:
             print("Press-1 To insert new telephone contact")
-            print("Press-2 To Show telphone book")
+            print("Press-2 To Show telephone book")
             print("Press-3 To search contact")
             print("Press-4 To export phone book")
             print("Press-5 to Exit")
