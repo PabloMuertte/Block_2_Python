@@ -40,7 +40,7 @@ def edit_search_employer(search,data,new):
         for num, line in enumerate(f,1):
             if search in line:
                 list_line = list(line.split(" "))              
-                list_line[data] = new + ','
+                list_line[data] = new + ', '
                 new_str = ' '.join(list_line)
                 print(new_str)
                 with open (FILE_NAME, "r",encoding="UTF-8") as f:   

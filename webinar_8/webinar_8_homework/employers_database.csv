@@ -1,9 +1,10 @@
-1, first name, last name, phone number, title, salary
+id, first name, last name, phone number, title, salary
 2, Pavel, Ivanov, 8808, Manager, 1000, New_employer,
 3, Naomi, Pampkins, 8009, ITadmin, 1500
-4, Maul, Kotel, 9608, operator, 1500
 5, Petrov, Sergey, 8634, admin, 1500
-6, Shkuratov, Petr, 7856, System_administrator, administrator
+6, Shkuratov, Petr, 7856, System_administrator, 1600,   
 71, Bashirov, Sergey, 4567, Tester, 1500
 996, Carver, Michel, 4512, Analitics, 1600
 364, Piterson, Jacob, 9634, Support, 1200
+471, Maul, Ruslan, 1415, Magl, 80000,
+563, Naomi, Ilas, 1899, Admin, 1433,
